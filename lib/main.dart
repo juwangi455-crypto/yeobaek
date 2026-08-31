@@ -1,4 +1,5 @@
 import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 
@@ -351,7 +352,8 @@ class _RestScreenState extends State<RestScreen> {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text(
-            '숲소리를 재생할 수 없어요.\nassets/sounds 폴더와 pubspec.yaml을 확인해주세요.',
+            '숲소리를 재생할 수 없어요.\n'
+            'assets/sounds 폴더와 pubspec.yaml을 확인해주세요.',
           ),
         ),
       );
